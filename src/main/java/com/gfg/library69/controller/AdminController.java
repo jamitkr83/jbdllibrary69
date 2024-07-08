@@ -54,7 +54,7 @@ public class AdminController {
 
     @PutMapping("admin/book")
     public ResponseEntity<Book> updateBook(@RequestParam("bookId") Integer id,@RequestBody Book book){
-
+System.out.println("Hi creating some change");
         return new ResponseEntity<>(bookService.updateBook(id, book),HttpStatus.OK);
 
     }
